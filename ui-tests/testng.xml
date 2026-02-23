@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="InsiderOne Automation Suite" parallel="false" verbose="1">
+    <parameter name="browser" value="chrome"/>
+    <test name="Home Page Tests">
+        <classes>
+            <class name="tests.homepage.HomePageTests"/>
+        </classes>
+    </test>
+    <test name="Careers Page Tests">
+        <classes>
+            <class name="tests.careers.CareersPageTests"/>
+        </classes>
+    </test>
+    <test name="QA Jobs Tests">
+        <classes>
+            <class name="tests.jobs.QaJobFilterPageTests"/>
+            <class name="tests.jobs.QaViewRoleTests"/>
+        </classes>
+    </test>
+</suite>
